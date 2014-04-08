@@ -9,6 +9,7 @@ en:
   about:
     title: "About"
   experience:
+    title: "Job experience"
     dates: "Dates"
     employer: "Employer"
     ocuppation: "Ocuppation"
