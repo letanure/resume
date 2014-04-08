@@ -1,1 +1,13 @@
 en:
+  person:
+    name: "Name"
+    jobTitle: ""
+  address: "Address"
+  telephone: "Telephone"
+  email: "E-mail"
+  url: "Site"
+  experience:
+    dates: "Dates"
+    employer: "Employer"
+    ocuppation: "Ocuppation"
+    activities: "Activities"
