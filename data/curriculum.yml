@@ -40,9 +40,121 @@ experience:
       end: "07/2013"
     employer:
       name: "Vorttex"
-      url: "http://www.vorttex.com.br/ "
+      url: "http://www.vorttex.com.br/"
       sector: "Software development"
     ocuppation: "Front end - SR"
     activities:
-      - Define and develop the front end structure for all company projects
-      - Develop the front end for projects, like single page apps, CMSs, principally with javascript contributions.
+      - "Define and develop the front end structure for all company projects"
+      - "Develop the front end for projects, like single page apps, CMSs, principally with javascript contributions."
+  -
+    dates:
+      start: "06/2012"
+      end: "09/2012"
+    employer:
+      name: "StaunchRobots"
+      url: "http://staunchrobots.com/"
+      sector: "Software development"
+    ocuppation: "Front end - SR"
+    activities:
+      - "Development of backbone apps, fully tested with Jasmine, with Sinatra back-end REST APIs"
+  -
+    dates:
+      start: "02/2012"
+      end: "11/2012"
+    employer:
+      name: "Codeminer42"
+      url: "http://www.codeminer42.com/"
+      sector: "Software development"
+    ocuppation: "Front end - SR"
+    activities:
+      - "Delevopment of start-up projects, with RoR back-end, from the product discovery, with UX/IA team, to the front-end coding, principally in the projects with a lots of JavasScript."
+  -
+    dates:
+      start: "02/2012"
+      end: "11/2012"
+    employer:
+      name: "Band"
+      url: "http://www.band.uol.com.br/"
+      sector: "News Portal / Television"
+    ocuppation: "Front end - SR"
+    activities:
+      - "Restructuration of all news portal and internal sites, focused in performance, better user experience, maintanance, SEO."
+      - "Training of front-end team, introducing newer technologies and techniques."
+      - "Also developed a CMS for journalists with the principle of edit-in-place."
+  -
+    dates:
+      start: "01/2008"
+      end: "01/2012"
+    employer:
+      name: "Inter.net"
+      url: "http://www.inter.net/"
+      sector: "Software development"
+    ocuppation: "Front end - SR"
+    activities:
+      - "Development of hot-sites, e-commerces, CMSs, web apps and games for Facebook."
+  -
+    dates:
+      start: "06/2008"
+      end: "12/2008"
+    employer:
+      name: "UOL"
+      url: "http://www.uol.com.br/"
+      sector: "News Portal / Internet service provider"
+    ocuppation: "Front end - SR"
+    activities:
+      - "Help the innovation team in development of new pages, apps and patterns for the news portal and other front-end teams."
+  -
+    dates:
+      start: "06/2006"
+      end: "05/2008"
+    employer:
+      name: "Madri Comunicativa"
+      url: "http://www.madricomunicativa.com.br/"
+      sector: "Publicity Agency"
+    ocuppation: "Full stack developer with PHP"
+    activities:
+      - "Development of sites, e-commerces, CMSs, with CodeIgniter"
+  -
+    dates:
+      start: "08/2006"
+      end: "06/2007"
+    employer:
+      name: "DialHost"
+      url: "DialHost"
+      sector: "Web Host"
+    ocuppation: "Full stack developer"
+    activities:
+      - "Development of new version of the management system of users and host services, with CodeIgniter and client side consuming a REST API."
+  -
+    dates:
+      start: "07/2004"
+      end: "08/2006"
+    employer:
+      name: "AGEMG"
+      url: "http://www.pge.mg.gov.br/ "
+      sector: "Government Lawyers"
+    ocuppation: "Full stack developer"
+    activities:
+      - "Create and maintain an intranet for the lawyers state government company, discover and develop apps and services for this intranet."
+  -
+    dates:
+      start: "08/2002"
+      end: "07/2004"
+    employer:
+      name: "Medley"
+      url: "http://medley.com.br/ "
+      sector: "Events"
+    ocuppation: "Web designer"
+    activities:
+      - "Creation of sites and hot-sites, flyers and mail-marketing to promote events of company."
+  -
+    dates:
+      start: "02/2000"
+      end: "07/2002"
+    employer:
+      name: "Banco do Brasil"
+      url: "http://www.bancobrasil.com.br/"
+      sector: "Bank / Financial"
+    ocuppation: "Support"
+    activities:
+      - "Support internal users, development of small internal financial apps, and other banking services."
