@@ -53,6 +53,7 @@ set :images_dir, 'assets/images'
 
 activate :directory_indexes
 
+activate :i18n
 
 # Build-specific configuration
 configure :build do
