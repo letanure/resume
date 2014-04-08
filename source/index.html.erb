@@ -107,8 +107,9 @@ title: Curriculum Vitae
                   <span class="label">
                     <%= I18n.t("experience.employer") %>:
                   </span>
-                  <%= job.employer.name %>
-                  <%= job.employer.url %>
+                  <a href="<%= job.employer.url %>" target="_blank">
+                    <%= job.employer.name %>
+                  </a>
                   <%= job.employer.sector %>
                 </div>
                 <div class="dates">
