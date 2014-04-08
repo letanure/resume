@@ -1,0 +1,36 @@
+.header
+  +outer-container
+  background-color: $color5
+  padding: 2rem
+
+  .header-name
+    +span-columns(8)
+
+    h1
+      font-size: 4rem
+      color: $color1
+    p
+      color: $color2
+      letter-spacing: .1rem
+      &:before
+        content: "{"
+      &:after
+        content: "}"
+
+
+
+  .header-info
+    +span-columns(4)
+    font-size: .7rem
+    color: $color7
+
+    .label
+      font-size: .6rem
+      display: block
+      color: $color2
+
+    .info
+      margin-bottom: .3rem
+
+    a
+      color: $color7
