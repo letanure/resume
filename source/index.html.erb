@@ -3,9 +3,7 @@ title: Curriculum Vitae
 ---
 <div class="curriculum">
 
-  <div itemscope itemtype="http://schema.org/Person">
-
-    <header class="header">
+    <header class="header" itemscope itemtype="http://schema.org/Person">
       <!-- <%= I18n.t("person.name") %> -->
       <div class="header-name">
         <h1 itemprop="name">
@@ -43,7 +41,9 @@ title: Curriculum Vitae
           <%= I18n.t("telephone") %>:
         </div>
         <div class="info" itemprop="telephone">
-          <%= data.curriculum.person.telephone %>
+          <a href="tel:<%= data.curriculum.person.telephone.delete(' ').delete('-') %>">
+            <%= data.curriculum.person.telephone %>
+          </a>
         </div>
 
         <div class="label">
@@ -67,12 +67,20 @@ title: Curriculum Vitae
       </div>
 
     </header>
+    <div class="border-header"></div>
 
 
+    <div class="about section">
+      <h2>
+        <%= I18n.t("about.title") %>:
+      </h2>
+      <% data.curriculum.about.each do |item| %>
+        <p>
+          <%= item %>
+        </p>
+      <% end %>
 
-
-
-  </div>
+    </div>
 
 
   <ol>
