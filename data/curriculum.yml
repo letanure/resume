@@ -1,5 +1,7 @@
 person:
-  name: "Luiz Eduardo Tanure Bacelar"
+  name:
+    full: "Luiz Eduardo Tanure Bacelar"
+    short: "Luiz Tanure"
   jobTitle: "Front-end"
   telephone: "+55 11 98745-3156"
   email : "letanure@gmail.com"
