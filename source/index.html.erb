@@ -73,7 +73,9 @@ title: Curriculum Vitae
         <ul>
           <%= I18n.t("experience.activities") %>:
           <% job.activities.each do |activitie| %>
-            <%= activitie %>
+            <li>
+              <%= activitie %>
+            </li>
           <% end %>
         </ul>
       </li>
