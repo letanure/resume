@@ -1,3 +1,40 @@
 ---
-title: Welcome to Middleman
+title: Curriculum Vitae
 ---
+<div itemscope itemtype="http://schema.org/Person">
+
+  <span itemprop="name">
+    <%= data.curriculum.person.name %>
+  </span>
+  <span itemprop="jobTitle">
+    <%= data.curriculum.person.jobTitle %>
+  </span>
+
+  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress">
+      <%= data.curriculum.person.address.streetAddress %>
+    </span>
+    <span itemprop="addressLocality">
+      <%= data.curriculum.person.address.addressLocality %>
+    </span>,
+    <span itemprop="addressRegion">
+      <%= data.curriculum.person.address.addressRegion %>
+    </span>
+    <span itemprop="addressCountry">
+      <%= data.curriculum.person.address.addressCountry %>
+    </span>
+  </div>
+
+  <span itemprop="telephone">
+    <%= data.curriculum.person.telephone %>
+  </span>
+
+  <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
+    <%= data.curriculum.person.email %>
+  </a>
+
+   <a href="<%= data.curriculum.person.url %>" itemprop="url">
+      <%= data.curriculum.person.url %>
+   </a>
+
+</div>
