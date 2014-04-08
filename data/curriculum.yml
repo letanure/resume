@@ -1,0 +1,15 @@
+person:
+  name: "Luiz Eduardo Tanure Bacelar"
+  jobTitle: "Front-end"
+  telephone: "+55 11 98745-3156"
+  email : "letanure@gmail.com"
+  url: "http://github.com/letanure/"
+  nationality: "Brazilian"
+  birth: "29/07/1981"
+  address:
+    streetAddress: "Alameda Macieira da Maia, 103, Planalto Paulista"
+    addressLocality: "São Paulo"
+    addressRegion: "SP"
+    postalCode: ""
+    addressCountry: "Brasil"
+
