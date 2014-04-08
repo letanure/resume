@@ -4,7 +4,7 @@
   padding: 2rem
 
   .header-name
-    +span-columns(8)
+    +span-columns(7)
 
     h1
       font-size: 4rem
@@ -20,8 +20,8 @@
 
 
   .header-info
-    +span-columns(4)
-    font-size: .7rem
+    +span-columns(5)
+    font-size: .8rem
     color: $color7
 
     .label
@@ -34,3 +34,21 @@
 
     a
       color: $color7
+
+.border-header
+  height: 2rem
+  +background-size(2rem 2rem)
+  background-repeat: repeat-x
+  background-image:  -webkit-linear-gradient(-45deg, $color5 25%, transparent 25%, transparent), -webkit-linear-gradient(45deg, transparent 75%, $color5 75%)
+
+.section
+  padding: 1rem
+  line-height: 1.1rem
+  color: $color8
+  h2
+    margin: 0 0 .5rem 0
+
+
+.about
+  h2
+    color: $color2
