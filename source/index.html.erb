@@ -110,7 +110,9 @@ title: Curriculum Vitae
                   <a href="<%= job.employer.url %>" target="_blank">
                     <%= job.employer.name %>
                   </a>
-                  <%= job.employer.sector %>
+                  <span class="sector">
+                    <%= job.employer.sector %>
+                  </span>
                 </div>
                 <div class="dates">
                   <span class="label">
@@ -119,15 +121,17 @@ title: Curriculum Vitae
                   <%= job.dates.start %>
                   <%= job.dates.end %>
                 </div>
-                <div>
-
-                </div>
-                <div>
-                  <%= I18n.t("experience.ocuppation") %>:
+                <div class="ocuppation">
+                  <span class="label">
+                    <%= I18n.t("experience.ocuppation") %>:
+                  </span>
                   <%= job.ocuppation %>
                 </div>
-                <ul>
+                <span class="label">
                   <%= I18n.t("experience.activities") %>:
+                </span>
+                <ul>
+
                   <% job.activities.each do |activitie| %>
                     <li>
                       <%= activitie %>
