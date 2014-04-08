@@ -56,12 +56,14 @@ section
   +span-columns(8)
   ol
     list-style: none
-    padding: 0 0 0 2rem
+    padding: .5rem 0 0 2rem
     // overflow-x: hidden
     &>li
-      border: 1px solid $color7
+      border: 1px solid lighten($color5, 20%)
       position: relative
       padding: .3rem
+      margin-bottom: .5rem
+      border-radius: .2rem
       &:before
         content: attr(data-year)
         background-color: $color2
@@ -82,7 +84,7 @@ section
         display: block
         width: .2rem
         background-color: $color2
-        height: 120%
+        height: 150%
         position: absolute
         left: -1.4rem
         top: calc(50% - 1rem)
@@ -93,13 +95,60 @@ section
           background-color: $color1
 
   ul
+    clear: both
     list-style: none
     li
-      +outer-container
+      margin-bottom: .3rem
+      color: $color8
+      &:before
+        content: "> "
+        color: $color5
 
   .label
     display: none
   .employer
     +span-columns(8)
+    font-size: 1.3rem
+    // font-family:/
+    font-weight: bold
+    &:before
+      content: ""
+      width: 0
+      height: 0
+      display: block
+      border: 8px solid transparent
+      border-color: transparent lighten($color5, 20%) transparent transparent
+      position: absolute
+      top: calc(50% - 12px)
+      left: -16px
+    &:after
+      content: ""
+      width: 0
+      height: 0
+      display: block
+      border: 8px solid transparent
+      border-color: transparent #fff transparent transparent
+      position: absolute
+      top: calc(50% - 12px)
+      left: -15px
+
+    a
+      color: $color5
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    .sector
+      font-size: .8rem
+      color: $color3
+      &:before
+        content: "{ "
+      &:after
+        content: " }"
   .dates
     +span-columns(3)
+    font-size: .8rem
+
+  .ocuppation
+    +span-columns(12)
+    color: $color3
+    font-size: .8rem
