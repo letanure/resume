@@ -4,13 +4,16 @@ title: Curriculum Vitae
 <div itemscope itemtype="http://schema.org/Person">
 
   <span itemprop="name">
+    <%= I18n.t("person.name") %>
     <%= data.curriculum.person.name %>
   </span>
   <span itemprop="jobTitle">
+    <%= I18n.t("person.jobTitle") %>
     <%= data.curriculum.person.jobTitle %>
   </span>
 
   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <%= I18n.t("address") %>:
     <span itemprop="streetAddress">
       <%= data.curriculum.person.address.streetAddress %>
     </span>
@@ -26,15 +29,53 @@ title: Curriculum Vitae
   </div>
 
   <span itemprop="telephone">
+    <%= I18n.t("telephone") %>:
     <%= data.curriculum.person.telephone %>
   </span>
 
-  <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
-    <%= data.curriculum.person.email %>
-  </a>
+  <div>
+    <%= I18n.t("email") %>:
+    <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
+      <%= data.curriculum.person.email %>
+    </a>
+  </div>
 
-   <a href="<%= data.curriculum.person.url %>" itemprop="url">
+  <div>
+    <%= I18n.t("url") %>:
+    <a href="<%= data.curriculum.person.url %>" itemprop="url">
       <%= data.curriculum.person.url %>
-   </a>
+    </a>
+  </div>
 
 </div>
+
+<ol>
+  <% data.curriculum.experience.each do |job| %>
+      <li>
+        <div>
+          <%= I18n.t("experience.dates") %>:
+          <%= job.dates.start %>
+          <%= job.dates.end %>
+        </div>
+        <div>
+          <%= I18n.t("experience.employer") %>:
+          <%= job.employer.name %>
+          <%= job.employer.url %>
+          <%= job.employer.sector %>
+        </div>
+        <div>
+
+        </div>
+        <div>
+          <%= I18n.t("experience.ocuppation") %>:
+          <%= job.ocuppation %>
+        </div>
+        <ul>
+          <%= I18n.t("experience.activities") %>:
+          <% job.activities.each do |activitie| %>
+            <%= activitie %>
+          <% end %>
+        </ul>
+      </li>
+  <% end %>
+</ol>
