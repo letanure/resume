@@ -1,83 +1,111 @@
 ---
 title: Curriculum Vitae
 ---
-<div itemscope itemtype="http://schema.org/Person">
+<div class="curriculum">
 
-  <span itemprop="name">
-    <%= I18n.t("person.name") %>
-    <%= data.curriculum.person.name %>
-  </span>
-  <span itemprop="jobTitle">
-    <%= I18n.t("person.jobTitle") %>
-    <%= data.curriculum.person.jobTitle %>
-  </span>
+  <div itemscope itemtype="http://schema.org/Person">
 
-  <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-    <%= I18n.t("address") %>:
-    <span itemprop="streetAddress">
-      <%= data.curriculum.person.address.streetAddress %>
-    </span>
-    <span itemprop="addressLocality">
-      <%= data.curriculum.person.address.addressLocality %>
-    </span>,
-    <span itemprop="addressRegion">
-      <%= data.curriculum.person.address.addressRegion %>
-    </span>
-    <span itemprop="addressCountry">
-      <%= data.curriculum.person.address.addressCountry %>
-    </span>
+    <header class="header">
+      <!-- <%= I18n.t("person.name") %> -->
+      <div class="header-name">
+        <h1 itemprop="name">
+          <%= data.curriculum.person.name.short %>
+        </h1>
+        <p>
+          <%= I18n.t("person.jobTitle") %>
+          <span itemprop="jobTitle">
+            <%= data.curriculum.person.jobTitle %>
+          </span>
+        </p>
+      </div>
+      <div class="header-info">
+
+        <div class="label">
+          <%= I18n.t("address") %>:
+        </div>
+        <div class="info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">
+            <%= data.curriculum.person.address.streetAddress %>
+          </span>
+          <br>
+          <span itemprop="addressLocality">
+            <%= data.curriculum.person.address.addressLocality %>
+          </span>,
+          <span itemprop="addressRegion">
+            <%= data.curriculum.person.address.addressRegion %>
+          </span>
+          <span itemprop="addressCountry">
+            <%= data.curriculum.person.address.addressCountry %>
+          </span>
+        </div>
+
+        <div class="label">
+          <%= I18n.t("telephone") %>:
+        </div>
+        <div class="info" itemprop="telephone">
+          <%= data.curriculum.person.telephone %>
+        </div>
+
+        <div class="label">
+          <%= I18n.t("email") %>:
+        </div>
+        <div class="info">
+          <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
+            <%= data.curriculum.person.email %>
+          </a>
+        </div>
+
+        <div class="label">
+          <%= I18n.t("url") %>:
+        </div>
+        <div class="info">
+          <a href="<%= data.curriculum.person.url %>" itemprop="url">
+            <%= data.curriculum.person.url %>
+          </a>
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+
+
   </div>
 
-  <span itemprop="telephone">
-    <%= I18n.t("telephone") %>:
-    <%= data.curriculum.person.telephone %>
-  </span>
 
-  <div>
-    <%= I18n.t("email") %>:
-    <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
-      <%= data.curriculum.person.email %>
-    </a>
-  </div>
+  <ol>
+    <% data.curriculum.experience.each do |job| %>
+        <li>
+          <div>
+            <%= I18n.t("experience.dates") %>:
+            <%= job.dates.start %>
+            <%= job.dates.end %>
+          </div>
+          <div>
+            <%= I18n.t("experience.employer") %>:
+            <%= job.employer.name %>
+            <%= job.employer.url %>
+            <%= job.employer.sector %>
+          </div>
+          <div>
 
-  <div>
-    <%= I18n.t("url") %>:
-    <a href="<%= data.curriculum.person.url %>" itemprop="url">
-      <%= data.curriculum.person.url %>
-    </a>
-  </div>
+          </div>
+          <div>
+            <%= I18n.t("experience.ocuppation") %>:
+            <%= job.ocuppation %>
+          </div>
+          <ul>
+            <%= I18n.t("experience.activities") %>:
+            <% job.activities.each do |activitie| %>
+              <li>
+                <%= activitie %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+    <% end %>
+  </ol>
 
 </div>
-
-<ol>
-  <% data.curriculum.experience.each do |job| %>
-      <li>
-        <div>
-          <%= I18n.t("experience.dates") %>:
-          <%= job.dates.start %>
-          <%= job.dates.end %>
-        </div>
-        <div>
-          <%= I18n.t("experience.employer") %>:
-          <%= job.employer.name %>
-          <%= job.employer.url %>
-          <%= job.employer.sector %>
-        </div>
-        <div>
-
-        </div>
-        <div>
-          <%= I18n.t("experience.ocuppation") %>:
-          <%= job.ocuppation %>
-        </div>
-        <ul>
-          <%= I18n.t("experience.activities") %>:
-          <% job.activities.each do |activitie| %>
-            <li>
-              <%= activitie %>
-            </li>
-          <% end %>
-        </ul>
-      </li>
-  <% end %>
-</ol>
