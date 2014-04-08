@@ -6,6 +6,8 @@ en:
   telephone: "Telephone"
   email: "E-mail"
   url: "Site"
+  about:
+    title: "About"
   experience:
     dates: "Dates"
     employer: "Employer"
