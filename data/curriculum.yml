@@ -12,4 +12,30 @@ person:
     addressRegion: "SP"
     postalCode: ""
     addressCountry: "Brasil"
-
+experience:
+  -
+    dates:
+      start: "07/2013"
+      end: ""
+    employer:
+      name: "Locaweb"
+      url: "http://www.locaweb.com.br"
+      sector: "Hosting Provider, IaaS, PaaS, SaaS"
+    ocuppation: "Front end specialist"
+    activities:
+      - Develop the open source project , Locastyle,  a front end framework built to provide a simple stack for high scalable applications, used by all products in the company.
+      - Support the back end team, of IaaS products.
+      - Helping  the UX/IA team to create new elements and behaviors for internal framework and  wireframes.
+      - Bring new technologies and techniques of front end to the team, and help in the adoption of them.
+  -
+    dates:
+      start: "10/2012"
+      end: "07/2013"
+    employer:
+      name: "Vorttex"
+      url: "http://www.vorttex.com.br/ "
+      sector: "Software development"
+    ocuppation: "Front end - SR"
+    activities:
+      - Define and develop the front end structure for all company projects
+      - Develop the front end for projects, like single page apps, CMSs, principally with javascript contributions.
