@@ -1,0 +1,65 @@
+<header class="header" itemscope itemtype="http://schema.org/Person">
+  <!-- <%= I18n.t("person.name") %> -->
+  <div class="header-name">
+    <h1 itemprop="name">
+      <%= data.curriculum.person.name.short %>
+    </h1>
+    <p>
+      <%= I18n.t("person.jobTitle") %>
+      <span itemprop="jobTitle">
+        <%= data.curriculum.person.jobTitle %>
+      </span>
+    </p>
+  </div>
+  <div class="header-info">
+
+    <div class="label">
+      <%= I18n.t("address") %>:
+    </div>
+    <div class="info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <span itemprop="streetAddress">
+        <%= data.curriculum.person.address.streetAddress %>
+      </span>
+      <br>
+      <span itemprop="addressLocality">
+        <%= data.curriculum.person.address.addressLocality %>
+      </span>,
+      <span itemprop="addressRegion">
+        <%= data.curriculum.person.address.addressRegion %>
+      </span>
+      <span itemprop="addressCountry">
+        <%= data.curriculum.person.address.addressCountry %>
+      </span>
+    </div>
+
+    <div class="label">
+      <%= I18n.t("telephone") %>:
+    </div>
+    <div class="info" itemprop="telephone">
+      <a href="tel:<%= data.curriculum.person.telephone.delete(' ').delete('-') %>">
+        <%= data.curriculum.person.telephone %>
+      </a>
+    </div>
+
+    <div class="label">
+      <%= I18n.t("email") %>:
+    </div>
+    <div class="info">
+      <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
+        <%= data.curriculum.person.email %>
+      </a>
+    </div>
+
+    <div class="label">
+      <%= I18n.t("url") %>:
+    </div>
+    <div class="info">
+      <a href="<%= data.curriculum.person.url %>" itemprop="url">
+        <%= data.curriculum.person.url %>
+      </a>
+    </div>
+
+  </div>
+
+</header>
+<div class="border-header"></div>
