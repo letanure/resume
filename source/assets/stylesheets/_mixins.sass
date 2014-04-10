@@ -1,0 +1,17 @@
+@mixin animation($content)
+  @include experimental(animation, $content, -webkit, -moz, not -o, not -ms, official)
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-o-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=font-smoothing($value)
+  -webkit-font-smoothing: $value
+  -moz-font-smoothing: $value
+  font-smoothing: $value
