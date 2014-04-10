@@ -1,0 +1,46 @@
+<div class="experience">
+  <h2>
+    <%= I18n.t("experience.title") %>:
+  </h2>
+  <ol>
+    <% data.curriculum.experience.each do |job| %>
+        <li data-year="<%= job.dates.start.split("/")[1] %>">
+          <div class="employer">
+            <span class="label">
+              <%= I18n.t("experience.employer") %>:
+            </span>
+            <a href="<%= job.employer.url %>" target="_blank">
+              <%= job.employer.name %>
+            </a>
+            <span class="sector">
+              <%= job.employer.sector %>
+            </span>
+          </div>
+          <div class="dates">
+            <span class="label">
+            <%= I18n.t("experience.dates") %>:
+            </span>
+            <%= job.dates.start %>
+            <%= job.dates.end %>
+          </div>
+          <div class="ocuppation">
+            <span class="label">
+              <%= I18n.t("experience.ocuppation") %>:
+            </span>
+            <%= job.ocuppation %>
+          </div>
+          <span class="label">
+            <%= I18n.t("experience.activities") %>:
+          </span>
+          <ul>
+
+            <% job.activities.each do |activitie| %>
+              <li>
+                <%= activitie %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+    <% end %>
+  </ol>
+</div>
