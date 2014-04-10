@@ -1,0 +1,16 @@
+pt:
+  person:
+    name: "Nome"
+    jobTitle: ""
+  address: "Endereço"
+  telephone: "Telefone"
+  email: "E-mail"
+  url: "Site"
+  about:
+    title: "Sobre"
+  experience:
+    title: "Experiência"
+    dates: "Datas"
+    employer: "Empresa"
+    ocuppation: "Função"
+    activities: "Atividades"
