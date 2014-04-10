@@ -1,166 +1,21 @@
 ---
 title: Curriculum Vitae
 ---
-<div id="cores">
-  <ul>
-    <li class="cor1"></li>
-    <li class="cor2"></li>
-    <li class="cor3"></li>
-    <li class="cor4"></li>
-    <li class="cor5"></li>
-    <li class="cor6"></li>
-    <li class="cor7"></li>
-    <li class="cor8"></li>
-  </ul>
-</div>
+
+<%= partial "extras" %>
+
 <div class="curriculum">
 
-    <header class="header" itemscope itemtype="http://schema.org/Person">
-      <!-- <%= I18n.t("person.name") %> -->
-      <div class="header-name">
-        <h1 itemprop="name">
-          <%= data.curriculum.person.name.short %>
-        </h1>
-        <p>
-          <%= I18n.t("person.jobTitle") %>
-          <span itemprop="jobTitle">
-            <%= data.curriculum.person.jobTitle %>
-          </span>
-        </p>
-      </div>
-      <div class="header-info">
+    <%= partial "header" %>
 
-        <div class="label">
-          <%= I18n.t("address") %>:
-        </div>
-        <div class="info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="streetAddress">
-            <%= data.curriculum.person.address.streetAddress %>
-          </span>
-          <br>
-          <span itemprop="addressLocality">
-            <%= data.curriculum.person.address.addressLocality %>
-          </span>,
-          <span itemprop="addressRegion">
-            <%= data.curriculum.person.address.addressRegion %>
-          </span>
-          <span itemprop="addressCountry">
-            <%= data.curriculum.person.address.addressCountry %>
-          </span>
-        </div>
-
-        <div class="label">
-          <%= I18n.t("telephone") %>:
-        </div>
-        <div class="info" itemprop="telephone">
-          <a href="tel:<%= data.curriculum.person.telephone.delete(' ').delete('-') %>">
-            <%= data.curriculum.person.telephone %>
-          </a>
-        </div>
-
-        <div class="label">
-          <%= I18n.t("email") %>:
-        </div>
-        <div class="info">
-          <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
-            <%= data.curriculum.person.email %>
-          </a>
-        </div>
-
-        <div class="label">
-          <%= I18n.t("url") %>:
-        </div>
-        <div class="info">
-          <a href="<%= data.curriculum.person.url %>" itemprop="url">
-            <%= data.curriculum.person.url %>
-          </a>
-        </div>
-
-      </div>
-
-    </header>
-    <div class="border-header"></div>
-
-
-    <section class="about">
-      <h2>
-        <%= I18n.t("about.title") %>:
-      </h2>
-      <% data.curriculum.about.each do |item| %>
-        <p>
-          <%= item %>
-        </p>
-      <% end %>
-
-    </section>
+    <%= partial "about" %>
 
     <section>
 
-      <div class="experience">
-        <h2>
-          <%= I18n.t("experience.title") %>:
-        </h2>
-        <ol>
-          <% data.curriculum.experience.each do |job| %>
-              <li data-year="<%= job.dates.start.split("/")[1] %>">
-                <div class="employer">
-                  <span class="label">
-                    <%= I18n.t("experience.employer") %>:
-                  </span>
-                  <a href="<%= job.employer.url %>" target="_blank">
-                    <%= job.employer.name %>
-                  </a>
-                  <span class="sector">
-                    <%= job.employer.sector %>
-                  </span>
-                </div>
-                <div class="dates">
-                  <span class="label">
-                  <%= I18n.t("experience.dates") %>:
-                  </span>
-                  <%= job.dates.start %>
-                  <%= job.dates.end %>
-                </div>
-                <div class="ocuppation">
-                  <span class="label">
-                    <%= I18n.t("experience.ocuppation") %>:
-                  </span>
-                  <%= job.ocuppation %>
-                </div>
-                <span class="label">
-                  <%= I18n.t("experience.activities") %>:
-                </span>
-                <ul>
+      <%= partial "experience" %>
 
-                  <% job.activities.each do |activitie| %>
-                    <li>
-                      <%= activitie %>
-                    </li>
-                  <% end %>
-                </ul>
-              </li>
-          <% end %>
-        </ol>
-      </div>
+      <%= partial "skills" %>
 
-      <div class="skills">
-        <h2>
-          Skills
-        </h2>
-        <ul>
-          <% data.curriculum.skills.each do |skill| %>
-          <li>
-            <%= skill.split("=")[0] %>
-            <progress max="10" value="<%= skill.split("=")[1] %>">
-              <span class="progress-value" style="width: <%= skill.split("=")[1].to_i * 10 %>%"><%= skill.split("=")[1].to_i * 10 %>%</span>
-            </progress>
-          </li>
-          <% end %>
-        </ul>
-      </div>
     </section>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
 
 </div>
