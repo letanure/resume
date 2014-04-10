@@ -6,7 +6,8 @@
   <title>Document</title>
   <title><%= data.page.title %></title>
   <%= partial "meta-social" %>
-  <link href="assets/stylesheets/styles.css" media="all" rel="stylesheet" type="text/css" />
+  <%= favicon_tag 'resume-icon.ico' %>
+  <%= stylesheet_link_tag 'styles', media: "all" %>
 </head>
 <body class="<%= page_classes %>">
   <%= yield %>
