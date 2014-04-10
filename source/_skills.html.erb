@@ -1,0 +1,15 @@
+<div class="skills">
+  <h2>
+    Skills
+  </h2>
+  <ul>
+    <% data.curriculum.skills.each do |skill| %>
+    <li>
+      <%= skill.split("=")[0] %>
+      <progress max="10" value="<%= skill.split("=")[1] %>">
+        <span class="progress-value" style="width: <%= skill.split("=")[1].to_i * 10 %>%"><%= skill.split("=")[1].to_i * 10 %>%</span>
+      </progress>
+    </li>
+    <% end %>
+  </ul>
+</div>
