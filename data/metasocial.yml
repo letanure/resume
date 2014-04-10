@@ -1,0 +1,21 @@
+general:
+  title: "Luiz Tanure - Front End"
+  description: "I am a 32 year old front-end developer who lives in Brazil and works in Locaweb"
+# Twitter Card data
+twitter:
+  card: "summary"
+  site: "@publisher_handle"
+  title: "Page Title"
+  description: "Page description less than 200 characters"
+  creator: "@tanure"
+  # Twitter Summary card images must be at least 200x200px
+  image: "http://www.example.com/image.jpg"
+# Open Graph data
+opengraph:
+  title: "Title Here"
+  type: "article"
+  url: "http://www.example.com/"
+  image: "http://example.com/image.jpg"
+  description: "Description Here"
+  site_name: "Site Name, i.e. Moz"
+  admins: "Facebook numeric ID"
