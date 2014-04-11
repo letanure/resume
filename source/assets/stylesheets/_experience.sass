@@ -10,6 +10,13 @@
       padding: .3rem
       margin-bottom: .5rem
       border-radius: .2rem
+      &:hover
+        background-color: lighten($color5, 35%)
+        &:before
+          background-color: $color5
+        .employer
+          &:after
+            border-color: transparent lighten($color5, 35%) transparent transparent
       &:before
         content: attr(data-year)
         background-color: $color2
