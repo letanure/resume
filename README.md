@@ -5,7 +5,7 @@ made with love & middleman
 
 # How?
 
-- just fill the yml files, at [curriculum-vitae/tree/master/data](curriculum-vitae/tree/master/data).
+- just fill the yml files, at data folder
 - middleman server to see
 - middleman build --clean
 - middleman deploy --build-before
