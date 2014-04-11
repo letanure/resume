@@ -192,3 +192,28 @@ skills:
   - version control systems
   - Backbone
   - mysql
+
+education:
+  colleges:
+    -
+      dates:
+        start: "2000"
+        end: "2004"
+      institution: "Universidade de Brasília - UnB"
+      url: "Universidade de Brasília - UnB"
+      course: "Bachelor of Computer (B.Sc.), Computer Science"
+    -
+      dates:
+        start: "2004"
+        end: "2006"
+      institution: "FUMEC"
+      url: "FUMEC"
+      course: "degree in Computer Science"
+  trainings:
+    -
+      dates:
+        start: "2011"
+        end: ""
+      institution: "W3C BR"
+      url: "http://www.w3c.br/ "
+      course: "HTML5 Training"
