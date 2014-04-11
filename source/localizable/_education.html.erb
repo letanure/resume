@@ -1,0 +1,20 @@
+<div id="education">
+  <h2>
+    <%= I18n.t("education.title") %>
+  </h2>
+  <ul>
+    <% data.curriculum.education.colleges.each do |college| %>
+    <li>
+
+      <%= college.dates.start %>
+      <%= college.dates.end %>
+      <%= college.course %>
+      <a href="<%= college.url %>" target="_blank">
+        <%= college.institution %>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
+education:
