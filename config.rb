@@ -50,6 +50,7 @@
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
 activate :directory_indexes
 
