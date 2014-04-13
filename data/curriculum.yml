@@ -215,5 +215,27 @@ education:
         start: "2011"
         end: ""
       institution: "W3C BR"
-      url: "http://www.w3c.br/ "
+      url: "http://www.w3c.br/"
       course: "HTML5 Training"
+
+# languages:
+#   language:
+#     -
+#       name: "English"
+#       proficiency: "full professional proficiency"
+#     -
+#       name: "portuguese
+      # proficiency: "mother tongue"
+languages:
+  -
+    name: "English"
+    proficiency: "full professional proficiency"
+  -
+    name: "Portuguese"
+    proficiency: "mother tongue"
+
+projects:
+  -
+    name: ""
+    url: ""
+    desc: ""
