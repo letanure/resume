@@ -6,7 +6,9 @@
     <% data.curriculum.skills.each do |skill| %>
       <% if skill.split("=")[1].to_s != ''%>
         <li class="skill-with-bar">
-          <%= skill.split("=")[0] %>
+          <span class="skill-name">
+            <%= skill.split("=")[0] %>
+          </span>
           <progress max="10" value="<%= skill.split("=")[1] %>">
             <span class="progress-value" style="width: <%= skill.split("=")[1].to_i * 10 %>%"><%= skill.split("=")[1].to_i * 10 %>%</span>
           </progress>
