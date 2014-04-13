@@ -8,6 +8,7 @@ person:
   url: "http://github.com/letanure/"
   nationality: "Brazilian"
   birth: "29/07/1981"
+  resume: "http://letanure.github.io/curriculum-vitae/"
   address:
     streetAddress: "Alameda Macieira da Maia, 103, Planalto Paulista"
     addressLocality: "São Paulo"
@@ -239,3 +240,5 @@ projects:
     name: ""
     url: ""
     desc: ""
+
+interests:
