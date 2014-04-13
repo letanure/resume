@@ -1,3 +1,7 @@
+@media screen
+  .only-print
+    display: none !important
+
 @media print
 
   *
@@ -10,8 +14,20 @@
   a
     text-decoration: none
 
-  .border-header, #cores
+  .only-print
+    display: initial
+
+  #border-header, #cores, #fork-me
     display: none
+
+  #curriculum
+    background-color: transparent
+
+    #header
+      background-color: transparent
+      h1
+        color: $color5
+
 
   @page
     margin-left: 0px

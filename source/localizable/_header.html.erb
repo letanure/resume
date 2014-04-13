@@ -45,7 +45,7 @@
       <%= I18n.t("email") %>:
     </div>
     <div class="info">
-      <a href="mailto:<%= data.curriculum.person.email %>" itemprop="email">
+      <a href="mailto:<%= data.curriculum.person.email %>" target="_blank" itemprop="email">
         <%= data.curriculum.person.email %>
       </a>
     </div>
@@ -54,8 +54,17 @@
       <%= I18n.t("url") %>:
     </div>
     <div class="info">
-      <a href="<%= data.curriculum.person.url %>" itemprop="url">
+      <a href="<%= data.curriculum.person.url %>" target="_blank" itemprop="url">
         <%= data.curriculum.person.url %>
+      </a>
+    </div>
+
+    <div class="label only-print">
+      <%= I18n.t("resume") %>:
+    </div>
+    <div class="info only-print">
+      <a href="<%= data.curriculum.person.resume %>" target="_blank" itemprop="url">
+        <%= data.curriculum.person.resume %>
       </a>
     </div>
 
