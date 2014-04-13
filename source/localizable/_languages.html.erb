@@ -1,0 +1,13 @@
+<div id="languages">
+  <h2>
+    <%= I18n.t("languages.title") %>
+  </h2>
+  <ul>
+    <% data.curriculum.languages.each do |language| %>
+      <li>
+        <%= language.name %>
+        <%= language.proficiency %>
+      </li>
+    <% end %>
+  </ul>
+</div>
