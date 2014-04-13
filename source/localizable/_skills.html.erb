@@ -4,7 +4,7 @@
   </h2>
   <ul>
     <% data.curriculum.skills.each do |skill| %>
-      <% if skill.split("=")[1].to_s != ''%>
+      <% if skill.split("=")[1].to_s != '' %>
         <li class="skill-with-bar">
           <span class="skill-name">
             <%= skill.split("=")[0] %>
@@ -16,7 +16,7 @@
       <% end %>
     <% end %>
     <% data.curriculum.skills.each do |skill| %>
-      <% if skill.split("=")[1].to_s == ''%>
+      <% if skill.split("=")[1].to_s == '' %>
         <li>
           <%= skill.split("=")[0] %>
         </li>

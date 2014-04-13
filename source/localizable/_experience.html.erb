@@ -18,10 +18,13 @@
           </div>
           <div class="dates">
             <span class="label">
-            <%= I18n.t("experience.dates") %>:
+            <%= I18n.t("experience.dates.title") %>:
             </span>
             <%= job.dates.start %>
-            <%= job.dates.end %>
+            <% if job.dates.end != "" %>
+              <%= I18n.t("experience.dates.to") %>
+              <%= job.dates.end %>
+            <% end %>
           </div>
           <div class="ocuppation">
             <span class="label">

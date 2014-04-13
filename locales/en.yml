@@ -11,7 +11,9 @@ en:
     title: "About"
   experience:
     title: "Job experience"
-    dates: "Dates"
+    dates:
+      title: "Dates"
+      to: "to"
     employer: "Employer"
     ocuppation: "Ocuppation"
     activities: "Activities"
