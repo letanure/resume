@@ -1,7 +1,10 @@
 #skills
+  +span-columns(4)
+  margin-right: 0
   ul
     list-style: none
   li
+    +row
     line-height: 1.5rem
     display: inline
     &:after
@@ -13,11 +16,14 @@
       display: block
       &:after
         display: none
+  .skill-name
+    +span-columns(2 of 4)
   progress[value]
+    +span-columns(2 of 4)
     +appearance(none)
     // +background-image(+linear-gradient(45px 45px, #900 10px, #009 30px))
     // +background-image(linear-gradient(left top, #fff, #ddd))
-    width: 150px
+    // width: 100%
     height: 1rem
     float: right
     .progress-value
