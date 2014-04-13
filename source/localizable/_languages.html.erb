@@ -5,8 +5,12 @@
   <ul>
     <% data.curriculum.languages.each do |language| %>
       <li>
-        <%= language.name %>
-        <%= language.proficiency %>
+        <span class="language-name">
+          <%= language.name %>
+        </span>
+        <span class="language-proficiency">
+          <%= language.proficiency %>
+        </span>
       </li>
     <% end %>
   </ul>
