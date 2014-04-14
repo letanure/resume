@@ -3,19 +3,35 @@
   margin-right: 0
   ul
     list-style: none
+
   li
     +row
     line-height: 1.5rem
-    display: inline
-    &:after
-      content: "+"
-    &:last-child
-      &:after
-        display: none
+    page-break-inside: avoid
     &.skill-with-bar
       display: block
       &:after
         display: none
+    li
+      display: inline
+      white-space: nowrap
+      &:after
+        content: ","
+        display: inline-block
+        margin: 0 0 0 -3px
+      &:last-child
+        &:after
+          content: "."
+          // display: none
+  .group-name
+    color: $color4
+    font-size: 1.2rem
+  .group-skills
+    +row
+    li
+      font-size: .9rem
+
+
   .skill-name
     +span-columns(2 of 4)
   progress[value]
