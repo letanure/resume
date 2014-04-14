@@ -3,7 +3,7 @@
     <%= I18n.t("experience.title") %>:
   </h2>
   <ol>
-    <% data.curriculum.experience.each do |job| %>
+    <% data.experience.jobs.each do |job| %>
         <li data-year="<%= job.dates.start.split("/")[1] %>">
           <div class="employer">
             <span class="label">
