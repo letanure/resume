@@ -21,6 +21,11 @@ en:
     title: "Skills"
   education:
     title: "Education"
+    course: "Course"
+    institution: "Institution"
+    dates:
+      label: "Dates"
+      to: "to"
   languages:
     title: "Languages"
   interests:

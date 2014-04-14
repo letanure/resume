@@ -1,1 +1,23 @@
 #education
+  +span-columns(8)
+  ul
+  li
+    +row
+    margin-bottom: .5rem
+  .course-institution
+    +span-columns(6 of 8)
+    .course
+      color: $color5
+      display: block
+      font-size: 1.2rem
+    .institution
+      color: $color6
+      display: block
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+  .dates
+    +span-columns(2 of 8)
+    color: $color6
+  .label
+    display: none

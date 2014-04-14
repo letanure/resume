@@ -5,16 +5,31 @@
   <ul>
     <% data.education.colleges.each do |college| %>
     <li>
-
-      <%= college.dates.start %>
-      <%= college.dates.end %>
-      <%= college.course %>
-      <a href="<%= college.url %>" target="_blank">
-        <%= college.institution %>
-      </a>
+      <span class="course-institution">
+        <span class="course">
+          <span class="label">
+            <%= I18n.t("education.course") %>
+          </span>
+          <%= college.course %>
+        </span>
+        <span class="institution">
+          <span class="label">
+            <%= I18n.t("education.institution") %>
+          </span>
+          <a  class="institution" href="<%= college.url %>" target="_blank">
+            <%= college.institution %>
+          </a>
+        </span>
+      </span>
+      <span class="dates">
+        <span class="label">
+          <%= I18n.t("education.dates.label") %>
+        </span>
+        <%= college.dates.start %>
+        <%= I18n.t("education.dates.to") %>
+        <%= college.dates.end %>
+      </span>
     </li>
     <% end %>
   </ul>
 </div>
-
-education:
