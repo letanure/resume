@@ -10,3 +10,7 @@ made with love & middleman
 - middleman build --clean
 - middleman deploy --build-before
 - done
+
+## Plans
+- theming resume
+- multiple data resume
