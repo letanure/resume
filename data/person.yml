@@ -1,0 +1,26 @@
+name:
+  full: "Luiz Eduardo Tanure Bacelar"
+  short: "Luiz Tanure"
+jobTitle: "Front-end"
+telephone: "+55 11 98745-3156"
+email : "letanure@gmail.com"
+url: "http://github.com/letanure/"
+nationality: "Brazilian"
+birth: "29/07/1981"
+resume: "http://letanure.github.io/curriculum-vitae/"
+address:
+  streetAddress: "Alameda Macieira da Maia, 103, Planalto Paulista"
+  addressLocality: "São Paulo"
+  addressRegion: "SP"
+  postalCode: ""
+  addressCountry: "Brasil"
+
+social:
+  linkedin: http://linkedin.com/in/letanure
+  facebook: http://www.facebook.com/letanure
+  gthub: http://github.com/letanure
+  blog: http://letanure.github.io/
+
+about:
+  - "I am a 32 year old front-end developer who lives in Brazil and works in Locaweb."
+  - "Originally, five years ago, I was a full-stack developer , working with PHP/CodeIgniner, but when I move to São Paulo, decided work primary with HTML&CSS. No regrets."

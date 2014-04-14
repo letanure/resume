@@ -2,12 +2,12 @@
   <!-- <%= I18n.t("person.name") %> -->
   <div class="header-name">
     <h1 itemprop="name">
-      <%= data.curriculum.person.name.short %>
+      <%= data.person.name.short %>
     </h1>
     <p>
       <%= I18n.t("person.jobTitle") %>
       <span itemprop="jobTitle">
-        <%= data.curriculum.person.jobTitle %>
+        <%= data.person.jobTitle %>
       </span>
     </p>
   </div>
@@ -18,17 +18,17 @@
     </div>
     <div class="info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
       <span itemprop="streetAddress">
-        <%= data.curriculum.person.address.streetAddress %>
+        <%= data.person.address.streetAddress %>
       </span>
       <br>
       <span itemprop="addressLocality">
-        <%= data.curriculum.person.address.addressLocality %>
+        <%= data.person.address.addressLocality %>
       </span>,
       <span itemprop="addressRegion">
-        <%= data.curriculum.person.address.addressRegion %>
+        <%= data.person.address.addressRegion %>
       </span>
       <span itemprop="addressCountry">
-        <%= data.curriculum.person.address.addressCountry %>
+        <%= data.person.address.addressCountry %>
       </span>
     </div>
 
@@ -36,8 +36,8 @@
       <%= I18n.t("telephone") %>:
     </div>
     <div class="info" itemprop="telephone">
-      <a href="tel:<%= data.curriculum.person.telephone.delete(' ').delete('-') %>">
-        <%= data.curriculum.person.telephone %>
+      <a href="tel:<%= data.person.telephone.delete(' ').delete('-') %>">
+        <%= data.person.telephone %>
       </a>
     </div>
 
@@ -45,8 +45,8 @@
       <%= I18n.t("email") %>:
     </div>
     <div class="info">
-      <a href="mailto:<%= data.curriculum.person.email %>" target="_blank" itemprop="email">
-        <%= data.curriculum.person.email %>
+      <a href="mailto:<%= data.person.email %>" target="_blank" itemprop="email">
+        <%= data.person.email %>
       </a>
     </div>
 
@@ -54,8 +54,8 @@
       <%= I18n.t("url") %>:
     </div>
     <div class="info">
-      <a href="<%= data.curriculum.person.url %>" target="_blank" itemprop="url">
-        <%= data.curriculum.person.url %>
+      <a href="<%= data.person.url %>" target="_blank" itemprop="url">
+        <%= data.person.url %>
       </a>
     </div>
 
@@ -63,8 +63,8 @@
       <%= I18n.t("resume") %>:
     </div>
     <div class="info only-print">
-      <a href="<%= data.curriculum.person.resume %>" target="_blank" itemprop="url">
-        <%= data.curriculum.person.resume %>
+      <a href="<%= data.person.resume %>" target="_blank" itemprop="url">
+        <%= data.person.resume %>
       </a>
     </div>
 
