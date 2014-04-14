@@ -1,0 +1,14 @@
+<div id="interests">
+  <h2>
+    <%= I18n.t("interests.title") %>
+  </h2>
+  <ul>
+    <% data.interests.each do |interest| %>
+      <li>
+        <span class="interest-name">
+          <%= interest %>
+        </span>
+      </li>
+    <% end %>
+  </ul>
+</div>
