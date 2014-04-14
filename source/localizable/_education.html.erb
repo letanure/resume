@@ -26,8 +26,45 @@
           <%= I18n.t("education.dates.label") %>
         </span>
         <%= college.dates.start %>
+        <% if college.dates.end.to_s != "" %>
         <%= I18n.t("education.dates.to") %>
         <%= college.dates.end %>
+        <% end %>
+      </span>
+    </li>
+    <% end %>
+  </ul>
+  <h2>
+    <%= I18n.t("trainings.title") %>
+  </h2>
+  <ul>
+    <% data.education.trainings.each do |training| %>
+    <li>
+      <span class="course-institution">
+        <span class="course">
+          <span class="label">
+            <%= I18n.t("training.course") %>
+          </span>
+          <%= training.course %>
+        </span>
+        <span class="institution">
+          <span class="label">
+            <%= I18n.t("training.institution") %>
+          </span>
+          <a  class="institution" href="<%= training.url %>" target="_blank">
+            <%= training.institution %>
+          </a>
+        </span>
+      </span>
+      <span class="dates">
+        <span class="label">
+          <%= I18n.t("education.dates.label") %>
+        </span>
+        <%= training.dates.start %>
+        <% if training.dates.end.to_s != "" %>
+          <%= I18n.t("education.dates.to") %>
+          <%= training.dates.end %>
+        <% end %>
       </span>
     </li>
     <% end %>
