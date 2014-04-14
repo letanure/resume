@@ -3,7 +3,7 @@
     <%= I18n.t("skills.title") %>
   </h2>
   <ul>
-    <% data.skills.each do |skill| %>
+    <% data.skills.main.each do |skill| %>
       <% if skill.split("=")[1].to_s != '' %>
         <li class="skill-with-bar">
           <span class="skill-name">
@@ -15,12 +15,19 @@
         </li>
       <% end %>
     <% end %>
-    <% data.skills.each do |skill| %>
-      <% if skill.split("=")[1].to_s == '' %>
-        <li>
-          <%= skill.split("=")[0] %>
-        </li>
-      <% end %>
+    <% data.skills.others.each do |groupskill| %>
+    <li>
+      <span class="group-name">
+        <%= groupskill.name %>
+      </span>
+        <ul class="group-skills">
+        <% groupskill.skills.each do |skill| %>
+            <li>
+              <%= skill %>
+            </li>
+        <% end %>
+        </ul>
+    </li>
     <% end %>
   </ul>
 </div>
