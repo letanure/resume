@@ -1,26 +1,94 @@
-- Javascript=9
-- HTML=10
-- CSS=10
-- SASS=10
-- Grunt=7
-- MIddleman=8
-- PHP=8
-- Jasmine=8
-- Yeoman
-- Gulp
-- AngularJS
-- Jasmine
-- Rails
-- jQueryUI
-- Git
-- RequireJS AMD
-- Bootstrap
-- Vanilla
-- great eye/(passion) for detail
-- test-oriented
-- A/B tests
-- templating languages
-- high-performance, reusable code
-- version control systems
-- Backbone
-- mysql
+main:
+  - CSS/SASS=10
+  - HTML=10
+  - Javascript=9
+  - Jquery=10
+others:
+  -
+    name: "JavaScript Libraries & Frameworks"
+    skills:
+      - Backbone
+      - AngularJS
+      - Modernizr
+      - jQueryUI
+      - Vanilla
+      - Underscore
+      - Lo-Dash
+      - RequireJS/AMD
+  -
+    name: "Pre-Processing Languages"
+    skills:
+      - SLIM
+      - HAML
+      - LESS
+      - Stylus
+      - JADE
+      - ECO
+  -
+    name: "Templating"
+    skills:
+      - Mustache
+      - ECO
+      - Handlebars
+  -
+    name: "Structured Data"
+    skills:
+      - Microdata
+      - Mircroformats
+      - schema.org
+  -
+    name: "Back-end"
+    skills:
+      - Rails
+      - PHP / CodeIgniter / Cake
+      - Nodejs
+      - MySQL
+  -
+    name: "Static site generator"
+    skills:
+      - Middleman
+      - Jekyll
+      - Harp
+      - DocPad
+  -
+    name: "Tests"
+    skills:
+      - Jasmine
+      - Karma
+  -
+    name: "Task Runners"
+    skills:
+      - Grunt
+      - Gulp
+  -
+    name: "Agile Methodologies"
+    skills:
+      - Scrum
+      - Kanban
+      - Extreme Programming (XP)
+  -
+    name: "Web Principles & Methodologies"
+    skills:
+      - Accessibilty
+      - Cross-Browser Compatibility
+      - KISS
+      - Performance Optimization
+      - Progressive Enhancement
+      - Responsive Web Design
+      - Scalability
+      - Search Engine Optimization (SEO)
+      - Web Semantics
+      - Web Standards
+      - Usability
+      - A/B tests
+  -
+    name: "Others"
+    skills:
+      - Yeoman
+      - Bower
+      - Bootstrap
+      - APIs (google maps, twitter, facebook, etc)
+      - bash
+
+  # - high-performance, reusable code
+  # - great eye/(passion) for detail
