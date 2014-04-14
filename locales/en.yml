@@ -18,7 +18,7 @@ en:
     ocuppation: "Ocuppation"
     activities: "Activities"
   skills:
-    title: "Skills"
+    title: "Skills & Methodologies"
   education:
     title: "Education"
     course: "Course"
@@ -26,7 +26,11 @@ en:
     dates:
       label: "Dates"
       to: "to"
+  trainings:
+    title: "Trainings"
   languages:
     title: "Languages"
   interests:
     title: "Interests"
+  projects:
+    title: "Projects"
