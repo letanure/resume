@@ -21,7 +21,12 @@ social:
   blog: http://letanure.github.io/
 
 resumeHeadline:
-  - Experienced front-end developer passionate about cutting-edge technologies and products development
+  - Experienced front-end developer passionate about cutting-edge technologies and product development
+
+resumeProfile:
+  - Detail-oriented professional with thirteen years of experience as a software developer. 
+  - Focused on web/mobile applications, using HTML5/CSS, pure Javascript or frameworks like jQuery, Angular, Ember, also with good skills in Ruby, Rails, and PHP and other related technologies
+  - Excellent written and oral communication skills
 
 about:
   - "I am a front-end developer who lives in Brazil and works in Locaweb."

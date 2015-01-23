@@ -1,6 +1,16 @@
 <section id="about">
+  
   <h2>
-    <%= I18n.t("about.title") %>:
+    <%= I18n.t("about.resume") %>:
+  </h2>
+  <% data.person.resumeProfile.each do |item| %>
+    <p>
+      <%= item %>
+    </p>
+  <% end %>
+
+  <h2>
+    <%= I18n.t("about.personal") %>:
   </h2>
   <% data.person.about.each do |item| %>
     <p>

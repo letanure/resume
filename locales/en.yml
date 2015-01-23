@@ -8,7 +8,8 @@ en:
   url: "Site"
   resume: "Online resume"
   about:
-    title: "About"
+    resume: "Professional Resume"
+    personal: "About me"
   experience:
     title: "Job experience"
     dates:
