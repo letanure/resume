@@ -1,7 +1,6 @@
 name:
   full: "Luiz Eduardo Tanure Bacelar"
   short: "Luiz Tanure"
-jobTitle: "Front-end"
 telephone: "+55 11 98745-3156"
 email : "letanure@gmail.com"
 url: "http://github.com/letanure/"
@@ -20,6 +19,9 @@ social:
   facebook: http://www.facebook.com/letanure
   gthub: http://github.com/letanure
   blog: http://letanure.github.io/
+
+resumeHeadline:
+  - Experienced front-end developer passionate about cutting-edge technologies and products development
 
 about:
   - "I am a front-end developer who lives in Brazil and works in Locaweb."
