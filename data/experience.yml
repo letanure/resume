@@ -1,12 +1,32 @@
 jobs:
   -
     dates:
+      start: "08/2014"
+      end: "01/2015"
+    employer:
+      name: "Clickbus / Rocket Internet"
+      url: "http://www.clickbus.com"
+      sector: "Bus tickets / Travels"
+      employees : "100"
+    ocuppation: "Front end / Tech leader"
+    activities:
+      - Worked with POs to define features and prioritize tasks.
+      - Lead front-end team, mentoring, coaching, answering questions and solving problems.
+      - Assemble releases and drive improvements in the delivery and release processes. 
+      - Providing technical direction and evaluating the quality of deliverables. 
+      - Participating in the design process of new features and enhancements to the new platform. 
+      - Adhering to technical development/support processes, standard and software development best practices.
+      - Development of POCs, start new projects, define the front-end guidelines of development.
+      - Help with recruiting and selection. 
+  -
+    dates:
       start: "07/2013"
-      end: ""
+      end: "08/2014"
     employer:
       name: "Locaweb"
       url: "http://www.locaweb.com.br"
       sector: "Hosting Provider, IaaS, PaaS, SaaS"
+      employees : "500"
     ocuppation: "Front end specialist"
     activities:
       - Develop the open source project , Locastyle,  a front end framework built to provide a simple stack for high scalable applications, used by all products in the company.
@@ -21,6 +41,7 @@ jobs:
       name: "Vorttex"
       url: "http://www.vorttex.com.br/"
       sector: "Software development"
+      employees : "30"
     ocuppation: "Front end - SR"
     activities:
       - "Define and develop the front end structure for all company projects"
@@ -33,6 +54,7 @@ jobs:
       name: "StaunchRobots"
       url: "http://staunchrobots.com/"
       sector: "Software development"
+      employees : "20"
     ocuppation: "Front end - SR"
     activities:
       - "Development of backbone apps, fully tested with Jasmine, with Sinatra back-end REST APIs"
@@ -44,6 +66,7 @@ jobs:
       name: "Codeminer42"
       url: "http://www.codeminer42.com/"
       sector: "Software development"
+      employees : "100"
     ocuppation: "Front end - SR"
     activities:
       - "Delevopment of start-up projects, with RoR back-end, from the product discovery, with UX/IA team, to the front-end coding, principally in the projects with a lots of JavasScript."
@@ -55,6 +78,7 @@ jobs:
       name: "Band"
       url: "http://www.band.uol.com.br/"
       sector: "News Portal / Television"
+      employees : "2000"
     ocuppation: "Front end - SR"
     activities:
       - "Restructuration of all news portal and internal sites, focused in performance, better user experience, maintanance, SEO."
@@ -68,6 +92,7 @@ jobs:
       name: "Inter.net"
       url: "http://www.inter.net/"
       sector: "Software development"
+      employees : "200"
     ocuppation: "Front end - SR"
     activities:
       - "Development of hot-sites, e-commerces, CMSs, web apps and games for Facebook."
@@ -79,6 +104,7 @@ jobs:
       name: "UOL"
       url: "http://www.uol.com.br/"
       sector: "News Portal / Internet service provider"
+      employees : "500"
     ocuppation: "Front end - SR"
     activities:
       - "Help the innovation team in development of new pages, apps and patterns for the news portal and other front-end teams."
@@ -90,6 +116,7 @@ jobs:
       name: "Madri Comunicativa"
       url: "http://www.madricomunicativa.com.br/"
       sector: "Publicity Agency"
+      employees : "10"
     ocuppation: "Full stack developer with PHP"
     activities:
       - "Development of sites, e-commerces, CMSs, with CodeIgniter"
@@ -101,6 +128,7 @@ jobs:
       name: "DialHost"
       url: "DialHost"
       sector: "Web Host"
+      employees : "10"
     ocuppation: "Full stack developer"
     activities:
       - "Development of new version of the management system of users and host services, with CodeIgniter and client side consuming a REST API."
@@ -112,6 +140,7 @@ jobs:
       name: "AGEMG"
       url: "http://www.pge.mg.gov.br/ "
       sector: "Government Lawyers"
+      employees : "500"
     ocuppation: "Full stack developer"
     activities:
       - "Create and maintain an intranet for the lawyers state government company, discover and develop apps and services for this intranet."
@@ -123,6 +152,7 @@ jobs:
       name: "Medley"
       url: "http://medley.com.br/ "
       sector: "Events"
+      employees : "10"
     ocuppation: "Web designer"
     activities:
       - "Creation of sites and hot-sites, flyers and mail-marketing to promote events of company."
@@ -134,6 +164,7 @@ jobs:
       name: "Banco do Brasil"
       url: "http://www.bancobrasil.com.br/"
       sector: "Bank / Financial"
+      employees : "100k"
     ocuppation: "Support"
     activities:
       - "Support internal users, development of small internal financial apps, and other banking services."
