@@ -6,7 +6,7 @@ jobs:
     employer:
       name: "Clickbus / Rocket Internet"
       url: "http://www.clickbus.com"
-      sector: "Bus tickets / Travels"
+      sector: "Bus tickets online/app"
       employees : "100"
     ocuppation: "Front end / Tech leader"
     activities:
@@ -105,7 +105,7 @@ jobs:
       url: "http://www.uol.com.br/"
       sector: "News Portal / Internet service provider"
       employees : "500"
-    ocuppation: "Front end - SR"
+    ocuppation: "Front end - PL"
     activities:
       - "Help the innovation team in development of new pages, apps and patterns for the news portal and other front-end teams."
   -
@@ -126,7 +126,7 @@ jobs:
       end: "06/2007"
     employer:
       name: "DialHost"
-      url: "DialHost"
+      url: "http://www.dialhost.com.br/"
       sector: "Web Host"
       employees : "10"
     ocuppation: "Full stack developer"
