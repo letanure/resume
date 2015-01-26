@@ -12,11 +12,13 @@ en:
     personal: "About me"
   experience:
     title: "Job experience"
+    employeesNumber: employees
     dates:
       title: "Dates"
       to: "to"
     employer: "Employer"
     ocuppation: "Ocuppation"
+    at: "at"
     activities: "Activities"
   skills:
     title: "Skills & Methodologies"

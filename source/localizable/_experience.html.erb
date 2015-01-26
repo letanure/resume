@@ -5,6 +5,13 @@
   <ol>
     <% data.experience.jobs.each do |job| %>
         <li data-year="<%= job.dates.start.split("/")[1] %>">
+          <div class="ocuppation">
+            <span class="label">
+              <%= I18n.t("experience.ocuppation") %>:
+            </span>
+            <%= job.ocuppation %> 
+              <%= I18n.t("experience.at") %>:
+          </div>
           <div class="employer">
             <span class="label">
               <%= I18n.t("experience.employer") %>:
@@ -12,8 +19,11 @@
             <a href="<%= job.employer.url %>" target="_blank">
               <%= job.employer.name %>
             </a>
+            <br >
             <span class="sector">
               <%= job.employer.sector %>
+              |
+              ~<%= job.employer.employees %> <%= I18n.t("experience.employeesNumber") %>:
             </span>
           </div>
           <div class="dates">
@@ -25,12 +35,6 @@
               <%= I18n.t("experience.dates.to") %>
               <%= job.dates.end %>
             <% end %>
-          </div>
-          <div class="ocuppation">
-            <span class="label">
-              <%= I18n.t("experience.ocuppation") %>:
-            </span>
-            <%= job.ocuppation %>
           </div>
           <span class="label">
             <%= I18n.t("experience.activities") %>:
