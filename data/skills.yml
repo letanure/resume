@@ -9,21 +9,21 @@ others:
     skills:
       - Backbone
       - AngularJS
-      - Modernizr
+      - React
       - jQueryUI
-      - Vanilla
       - Underscore
       - Lo-Dash
       - RequireJS/AMD
   -
     name: "Pre-Processing Languages"
     skills:
+      - JADE
+      - Stylus
       - SLIM
       - HAML
       - LESS
-      - Stylus
-      - JADE
       - ECO
+      - SASS
   -
     name: "Templating"
     skills:
@@ -48,7 +48,6 @@ others:
     skills:
       - Middleman
       - Jekyll
-      - Harp
       - DocPad
   -
     name: "Tests"
@@ -58,14 +57,13 @@ others:
   -
     name: "Task Runners"
     skills:
-      - Grunt
       - Gulp
+      - Grunt
   -
     name: "Agile Methodologies"
     skills:
       - Scrum
       - Kanban
-      - Extreme Programming (XP)
   -
     name: "Web Principles & Methodologies"
     skills:

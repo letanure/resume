@@ -1,6 +1,34 @@
 jobs:
   -
     dates:
+      start: "08/2015"
+      end: "current"
+    employer:
+      name: "klickrent GmbH"
+      url: "http://www.clickrent.com"
+      sector: "Online  rental"
+      employees : "40"
+    ocuppation: "Front end"
+    activities:
+      - Web development with angular / gulp / nodejs.
+      - Refactoring of legacy code to fit modern patterns with modules.
+      - Improvements in web performance.
+      - Introduce better development tools and patterns to the team.
+  -
+    dates:
+      start: "01/2015"
+      end: "06/2015"
+    employer:
+      name: "Oi"
+      url: "http://www.oi.com.br"
+      sector: "Telecommunications"
+      employees : "18.000"
+    ocuppation: "Front end / Tech leader"
+    activities:
+      - Web development of new portal with Riot / React 
+      - Create new projet scaffold, with best practices, focused in beter performace
+  -
+    dates:
       start: "08/2014"
       end: "01/2015"
     employer:
