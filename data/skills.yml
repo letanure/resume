@@ -1,19 +1,23 @@
 main:
-  - CSS/SASS=10
-  - HTML=10
-  - Javascript=9
+  - Javascript=10
+  - CSS/SASS/STYLUS=10
+  - HTML/PUG=10
+  - Angular=9
+  - VueJS=9
+  - REACT=7
   - Jquery=10
 others:
   -
-    name: "JavaScript Libraries & Frameworks"
+    name: "JavaScript Libraries & Frameworks , etc"
     skills:
-      - Backbone
-      - AngularJS
       - React
-      - jQueryUI
-      - Underscore
-      - Lo-Dash
-      - RequireJS/AMD
+      - AngularJS
+      - VueJS
+      - Webpack
+      - Underscore & Lo-Dash
+      - PWA
+      - AMP
+      - Javascript / ES6
   -
     name: "Pre-Processing Languages"
     skills:
@@ -30,6 +34,7 @@ others:
       - Mustache
       - ECO
       - Handlebars
+      - PUG / JADE
   -
     name: "Structured Data"
     skills:
@@ -57,6 +62,7 @@ others:
   -
     name: "Task Runners"
     skills:
+      - Webpack
       - Gulp
       - Grunt
   -

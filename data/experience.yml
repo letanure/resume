@@ -1,8 +1,25 @@
 jobs:
   -
     dates:
+      start: "07/2016"
+      end: "today"
+    employer:
+      name: "Urbanara GmBH"
+      url: "http://www.urbanara.de"
+      sector: "Ecommerce"
+      employees : "50"
+    ocuppation: "Tech leader Front end"
+    activities:
+      - Development of new platform with VueJs, Webpack, Stylus
+      - Definitions of development guidelines
+      - Definitions of UX/UI guidelines
+      - Training of team and other people  of company
+      - Maintenance in the old platform with jQuery / Angular
+      - Introduce better development tools and patterns to the team.
+  -
+    dates:
       start: "08/2015"
-      end: "current"
+      end: "07/2016"
     employer:
       name: "klickrent GmbH"
       url: "http://www.clickrent.com"

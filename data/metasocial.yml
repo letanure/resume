@@ -1,12 +1,12 @@
 general:
   title: "Luiz Tanure - Front End"
-  description: "I am a 34 year old front-end developer who lives in Berlin and works at klickrent"
+  description: "I am a 36 year old front-end developer who lives in Berlin and works at Urbanara"
 # Twitter Card data
 twitter:
   card: "summary"
   site: "@publisher_handle"
   title: "Luiz Tanure - Front End"
-  description: "I am a 34 year old front-end developer who lives in Berlin and works at klickrent"
+  description: "I am a 36 year old front-end developer who lives in Berlin and works at Urbanara"
   creator: "@tanure"
   # Twitter Summary card images must be at least 200x200px
   image: "http://www.example.com/image.jpg"
@@ -16,6 +16,6 @@ opengraph:
   type: "article"
   url: "http://www.example.com/"
   image: "http://example.com/image.jpg"
-  description: "I am a 34 year old front-end developer who lives in Berlin and works at klickrent"
+  description: "I am a 36 year old front-end developer who lives in Berlin and works at Urbanara"
   site_name: "Luiz Tanure Resume"
   admins: "Facebook numeric ID"
