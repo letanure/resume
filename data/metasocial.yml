@@ -9,13 +9,13 @@ twitter:
   description: "I am a 36 year old front-end developer who lives in Berlin and works at Urbanara"
   creator: "@tanure"
   # Twitter Summary card images must be at least 200x200px
-  image: "http://www.example.com/image.jpg"
+  image: "http://letanure.github.io/resume/image.jpg"
 # Open Graph data
 opengraph:
   title: "Luiz Tanure - Front End"
   type: "article"
-  url: "http://www.example.com/"
-  image: "http://example.com/image.jpg"
+  url: "http://letanure.github.io/resume/"
+  image: "http://letanure.github.io/resume/image.jpg"
   description: "I am a 36 year old front-end developer who lives in Berlin and works at Urbanara"
   site_name: "Luiz Tanure Resume"
   admins: "Facebook numeric ID"
